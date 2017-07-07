@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/decelerate_interpolator"
+    android:shareInterpolator="true">
+    <scale
+        android:duration="4000"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.7"
+        android:toYScale="0.7" />
+    <!--缩放起始，xy缩放中轴点，结束放缩比例-->
+
+    <rotate
+        android:duration="4000"
+        android:fromDegrees="0"
+        android:toDegrees="50"
+        android:repeatCount="1"
+        android:repeatMode="reverse"
+         />
+    <!--repeatCount=-1时永不停止，repeatCount=0（转一次）1（转两次）。。。，android:repeatMode="reverse"重复模式，当偶数次旋转，即向另一个方向-->
+
+    <translate
+        android:duration="4000"
+        android:fromXDelta="0"
+        android:fromYDelta="0"
+        android:toXDelta="-320"
+        android:toYDelta="-1200" />
+    <!--位移-->
+
+    <alpha
+        android:duration="4000"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.6" />
+    <!--透明度-->
+
+</set>
